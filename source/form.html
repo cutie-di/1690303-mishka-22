@@ -91,12 +91,12 @@
             <legend class="form-content__legend">Тип</legend>
             <ul class="form-content__radio-list">
               <li class="form-content__radio-item">
-                <input class="form-content__radio-input" checked type="radio" name="interior-accessories"
-                  id="form-accessories">
+                <input class="form-content__radio-input" checked type="radio" name="item-type" id="form-accessories"
+                  value="accessories">
                 <label class="form-content__radio-label" for="form-accessories">Аксессуар для интерьера</label>
               </li>
               <li class="form-content__radio-item">
-                <input class="form-content__radio-input" type="radio" name="kid-toys" id="form-toys">
+                <input class="form-content__radio-input" type="radio" name="item-type" id="form-toys" value="kid-toys">
                 <label class="form-content__radio-label" for="form-toys">Детская игрушка</label>
               </li>
             </ul>
@@ -142,20 +142,20 @@
 
         <div class="form-content__wrapper">
           <fieldset class="form-content__fieldset">
-            <legend class="form-content__legend form-name">фио</legend>
+            <legend class="form-content__legend">фио</legend>
             <p>
-              <label class="form-content__first-name-label" for="form-first-name">Имя:</label>
-              <input class="form-content__first-name-input" type="text" id="form-first-name" name="first-name"
+              <label class="form-content__name-label" for="form-first-name">Имя:</label>
+              <input class="form-content__text-input" type="text" id="form-first-name" name="first-name"
                 placeholder="Введите ваше имя*">
             </p>
             <p>
-              <label class="form-content__last-name-label" for="form-last-name">Фамилия:</label>
-              <input class="form-content__last-name-input" type="text" id="form-last-name" name="last-name"
+              <label class="form-content__name-label" for="form-last-name">Фамилия:</label>
+              <input class="form-content__text-input" type="text" id="form-last-name" name="last-name"
                 placeholder="Укажите фамилию*">
             </p>
             <p>
-              <label class="form-content__patronymic-label" for="form-patronymic">Отчество:</label>
-              <input class="form-content__patronymic-input" type="text" id="form-patronymic" name="patronymic"
+              <label class="form-content__name-label" for="form-patronymic">Отчество:</label>
+              <input class="form-content__text-input" type="text" id="form-patronymic" name="patronymic"
                 placeholder="Отчество, если желаете">
             </p>
           </fieldset>
@@ -163,32 +163,23 @@
 
         <div class="form-content__wrapper form-content__wrapper--accent">
           <fieldset class="form-content__fieldset">
-            <legend class="form-content__legend">тел</legend>
-            <p>
-              <label class="form-content__phone-label" for="form-phone"></label>
-              <input class="form-content__phone-input" type="tel" id="form-phone" name="contact-phone"
-                placeholder="+7 ХХХ ХХХ ХХ ХХ*">
-            </p>
+            <label class="form-content__legend" for="form-phone">тел</label>
+            <input class="form-content__text-input" type="tel" id="form-phone"
+              name="contact-phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
           </fieldset>
 
           <fieldset class="form-content__fieldset">
-            <legend class="form-content__legend">E-mail</legend>
-            <p>
-              <label class="form-content__email-label" for="form-e-mail"></label>
-              <input class="form-content__email-input" type="email" id="form-e-mail" name="email"
-                placeholder="Ваш Email*">
-            </p>
+            <label class="form-content__legend" for="form-e-mail">E-mail</label>
+            <input class="form-content__text-input" type="email" id="form-e-mail"
+              name="email" placeholder="Ваш Email*">
           </fieldset>
         </div>
 
         <div class="form-content__wrapper">
           <fieldset class="form-content__fieldset">
-            <legend class="form-content__legend">доп</legend>
-            <p>
-              <label class="form-content__request-label" for="textarea"></label>
-              <textarea class="form-content__request-textarea" id="textarea"
-                placeholder="Опишите все ваши пожелания к заказу"></textarea>
-            </p>
+            <label class="form-content__legend" for="textarea">доп</label>
+            <textarea class="form-content__text form-content__text--textarea" id="textarea"
+              placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </fieldset>
         </div>
 
