@@ -1,0 +1,12 @@
+.button {
+  display: block;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  color: $color-text-description;
+  border: 2px solid $color-text-description;
+}

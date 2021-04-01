@@ -1,0 +1,28 @@
+//.about-us {}
+
+.about-us__wrapper {
+  margin: 0 30px 58px;
+}
+
+.about-us__title {
+  margin-bottom: 28px;
+}
+
+.about-us__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.about-us__item {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  color: $color-basic-black;
+  text-align: left;
+
+  &:not(:last-child) {
+    margin-bottom: 83px;
+  }
+}

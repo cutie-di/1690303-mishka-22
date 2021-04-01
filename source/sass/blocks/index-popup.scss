@@ -1,0 +1,64 @@
+//.modal {}
+
+//.modal-order {}
+
+//.modal-order__wrapper {}
+
+.modal-order__title {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  color: $color-basic-black;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 14px;
+}
+
+//.modal-order__form {}
+
+//.modal-order__fieldset {}
+
+.modal-order__legend {
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: 15px;
+  line-height: 30px;
+  color: $color-text-description;
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.modal-order__control {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 31px;
+}
+
+//.modal-order__control-checkbox {}
+
+//.modal-order__control-input {}
+
+.modal-order__control-label {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+  color: $color-text-description;
+  text-align: center;
+}
+
+.modal-order__add {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $color-basic-white;
+  background-color: $color-accent-green;
+  text-align: center;
+  margin: 0 30px;
+  padding: 18px 67px;
+}
