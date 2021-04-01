@@ -1,0 +1,28 @@
+//.user-list {}
+
+//.user-list__search {}
+
+//.user-list__button {}
+
+.user-list__input {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: $color-basic-black;
+  text-align: left;
+  text-decoration: none;
+}
+
+.user-list__cart {
+  display: block;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: $color-basic-black;
+  text-align: left;
+  text-decoration: none;
+  margin: 27px 0;
+  margin-left: 76px;
+}

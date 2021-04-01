@@ -1,0 +1,31 @@
+//.nav-delivery {}
+
+.nav-delivery__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+//.nav-delivery__item {}
+
+.nav-delivery__link {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: $color-basic-black;
+  text-align: left;
+  text-decoration: none;
+}
+
+.nav-delivery__post {
+  display: block;
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: 15px;
+  line-height: 24px;
+  color: $color-text-description;
+  text-align: right;
+  margin: 0;
+  padding: 0;
+}

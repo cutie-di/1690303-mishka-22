@@ -5,14 +5,17 @@
 @import "global/variables.scss";
 @import "global/container.scss";
 @import "global/button.scss";
-@import "global/title.scss";
 
 // Blocks //
-@import "blocks/header.scss";
+@import "blocks/site-list.scss";
+@import "blocks/user-list.scss";
+@import "blocks/index-section-title.scss";
 @import "blocks/main-header.scss";
 @import "blocks/top-item.scss";
 @import "blocks/about-us.scss";
 @import "blocks/reviews.scss";
 @import "blocks/contacts.scss";
-@import "blocks/footer.scss";
-@import "blocks/index-popup.scss";
+@import "blocks/modal-order.scss";
+@import "blocks/nav-delivery.scss";
+@import "blocks/social.scss";
+@import "blocks/page-footer.scss";
