@@ -1,0 +1,129 @@
+.form-content {
+  margin-bottom: 55px;
+}
+
+//.form-content__form {}
+
+//.form-content__wrapper {}
+
+.form-content__text {
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: 13px;
+  line-height: 24px;
+  color: $color-text-description;
+  padding: 0 30px;
+  margin: 0;
+  margin-bottom: 29px;
+}
+
+.form-content__fieldset {
+  border: none;
+  padding: 0 30px;
+  margin-bottom: 29px;
+}
+
+.form-content__legend {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $color-accent-green;
+  border: none;
+}
+
+.form-content__legend--selectors {
+  margin-bottom: 35px;
+}
+
+.form-content__radio-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.form-content__radio-item {
+  &:not(:last-child) {
+    margin-bottom: 24px;
+  }
+}
+
+//.form-content__radio-input {}
+
+.form-content__radio-label {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 18px;
+  color: $color-basic-black;
+}
+
+.form-content__wrapper--accent {
+  background-color: $color-page-background-grey;
+}
+
+.form-content__checkbox-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 33px;
+}
+
+.form-content__checkbox-item {
+  &:not(:last-child) {
+    margin-bottom: 43px;
+  }
+}
+
+//.form-content__checkbox-input {}
+
+.form-content__checkbox-label {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 18px;
+  color: $color-basic-black;
+}
+
+.form-content__name-label {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 18px;
+  color: $color-basic-black;
+}
+
+.form-content__text-input {
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: 17px;
+  line-height: 18px;
+  color: $color-basic-black-opacity-03;
+
+  &:not(:last-child) {
+    margin-bottom: 22px;
+  }
+}
+
+.form-content__text-textarea {
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: 17px;
+  line-height: 18px;
+  color: $color-basic-black-opacity-03;
+  padding: 17px;
+}
+
+.form-content__button {
+  background-color: transparent;
+  padding: 18px 37px;
+}
+
+.form-content__note {
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: 14px;
+  line-height: 16px;
+  color: $color-text-description;
+}
