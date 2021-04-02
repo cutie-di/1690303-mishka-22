@@ -99,7 +99,11 @@
   font-weight: inherit;
   font-size: 17px;
   line-height: 18px;
-  color: $color-basic-black-opacity-03;
+  color: $color-text-description;
+
+  &::placeholder {
+    color: $color-basic-black-opacity-03;
+  }
 
   &:not(:last-child) {
     margin-bottom: 22px;
@@ -111,8 +115,12 @@
   font-weight: inherit;
   font-size: 17px;
   line-height: 18px;
-  color: $color-basic-black-opacity-03;
   padding: 17px;
+  color: $color-text-description;
+
+  &::placeholder {
+    color: $color-basic-black-opacity-03;
+  }
 }
 
 .form-content__button {

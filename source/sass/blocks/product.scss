@@ -1,0 +1,17 @@
+.product {
+  margin-bottom: 30px;
+}
+
+//.product__wrapper {}
+
+.product__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.product__item {
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
