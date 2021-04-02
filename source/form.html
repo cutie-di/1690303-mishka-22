@@ -10,8 +10,8 @@
 
 <body class="page__body">
 
-  <header class="page-header">
-    <a class="page-header__logo">
+  <header class="page-header container">
+    <a class="page-header__logo" href="index.html">
       <img src="img/logo/header_logo_mobile.svg" width="86" height="35" alt="Логотип «Мишка»">
     </a>
 
@@ -21,7 +21,7 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a class="site-list__link" href="#">
+            <a class="site-list__link" href="catalog.html">
               Каталог товаров
             </a>
           </li>
@@ -47,7 +47,7 @@
         </div>
 
 
-        <div class="main-nav-delivery nav-delivery">
+        <div class="main-nav-delivery nav-delivery display-none">
           <ul class="nav-delivery__list">
             <li class="nav-delivery__item">
               <a class="nav-delivery__link" href="#">
@@ -76,8 +76,8 @@
     <h1 class="visually-hidden">Магазин вязанных изделий «Мишка»</h1>
 
     <div class="side-header">
-      <div class="side-header__wrapper">
-        <h2 class="side-header__title">Вязание на заказ</h2>
+      <div class="side-header__wrapper container">
+        <h2 class="side-header__title header-title">Вязание на заказ</h2>
       </div>
     </div>
 
@@ -85,15 +85,15 @@
       <h2 class="visually-hidden form-content__title">Форма заказа товара</h2>
       <form class="form-content__form" action="https://echo.htmlacademy.ru" method="post">
 
-        <div class="form-content__wrapper">
+        <div class="form-content__wrapper container">
           <p class="form-content__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа
             и мы свяжемся с вами, чтобы уточнить детали.</p>
         </div>
 
 
         <div class="form-content__wrapper">
-          <fieldset class="form-content__fieldset">
-            <legend class="form-content__legend">Тип</legend>
+          <fieldset class="form-content__fieldset container">
+            <legend class="form-content__legend form-content__legend--selectors">Тип</legend>
             <ul class="form-content__radio-list">
               <li class="form-content__radio-item">
                 <input class="form-content__radio-input" checked type="radio" name="item-type" id="form-accessories"
@@ -109,8 +109,8 @@
         </div>
 
         <div class="form-content__wrapper form-content__wrapper--accent">
-          <fieldset class="form-content__fieldset">
-            <legend class="form-content__legend">Цвет</legend>
+          <fieldset class="form-content__fieldset container">
+            <legend class="form-content__legend form-content__legend--selectors">Цвет</legend>
             <ul class="form-content__checkbox-list">
               <li class="form-content__checkbox-item">
                 <input class="form-content__checkbox-input" checked type="checkbox" name="white" id="form-white">
@@ -137,7 +137,7 @@
                 <label class="form-content__checkbox-label" for="form-pink">Розовый</label>
               </li>
 
-              <li class="form-content__checkbox-iten">
+              <li class="form-content__checkbox-item">
                 <input class="form-content__checkbox-input" type="checkbox" name="orange" id="form-orange">
                 <label class="form-content__checkbox-label" for="form-orange">Оранжевый</label>
               </li>
@@ -146,7 +146,7 @@
         </div>
 
         <div class="form-content__wrapper">
-          <fieldset class="form-content__fieldset">
+          <fieldset class="form-content__fieldset container">
             <legend class="form-content__legend">фио</legend>
             <p>
               <label class="form-content__name-label" for="form-first-name">Имя:</label>
@@ -167,27 +167,27 @@
         </div>
 
         <div class="form-content__wrapper form-content__wrapper--accent">
-          <fieldset class="form-content__fieldset">
+          <fieldset class="form-content__fieldset container">
             <label class="form-content__legend" for="form-phone">тел</label>
             <input class="form-content__text-input" type="tel" id="form-phone" name="contact-phone"
               placeholder="+7 ХХХ ХХХ ХХ ХХ*">
           </fieldset>
 
-          <fieldset class="form-content__fieldset">
+          <fieldset class="form-content__fieldset container">
             <label class="form-content__legend" for="form-e-mail">E-mail</label>
             <input class="form-content__text-input" type="email" id="form-e-mail" name="email" placeholder="Ваш Email*">
           </fieldset>
         </div>
 
         <div class="form-content__wrapper">
-          <fieldset class="form-content__fieldset">
+          <fieldset class="form-content__fieldset container">
             <label class="form-content__legend" for="textarea">доп</label>
-            <textarea class="form-content__text form-content__text--textarea" id="textarea"
+            <textarea class="form-content__text-textarea" id="textarea"
               placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </fieldset>
         </div>
 
-        <div class="form-content__wrapper">
+        <div class="form-content__wrapper container">
           <button class="form-content__button button" type="submit">Отправить заказ</button>
 
           <p class="form-content__note">*Поля обязательны для заполнения</p>
@@ -200,7 +200,7 @@
   </main>
 
   <footer class="page-footer">
-    <div class="page-footer__wrapper">
+    <div class="page-footer__wrapper container">
       <a class="page-footer__logo" href="index.html" aria-label="Логотип «Мишка»">
       </a>
 

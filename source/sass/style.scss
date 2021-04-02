@@ -7,6 +7,8 @@
 @import "global/button.scss";
 
 // Blocks //
+@import "blocks/header-title.scss";
+@import "blocks/side-header.scss";
 @import "blocks/site-list.scss";
 @import "blocks/user-list.scss";
 @import "blocks/index-section-title.scss";
@@ -19,3 +21,4 @@
 @import "blocks/nav-delivery.scss";
 @import "blocks/social.scss";
 @import "blocks/page-footer.scss";
+@import "blocks/form-content.scss";
