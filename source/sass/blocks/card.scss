@@ -1,0 +1,42 @@
+.card {
+  padding: 0 30px;
+}
+
+.card__img {
+  margin-bottom: 28px;
+}
+
+.card__link {
+  text-decoration: none;
+}
+
+.card__title {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: $color-basic-black;
+  margin: 0;
+  margin-bottom: 6px;
+}
+
+.card__characteristics {
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: 13px;
+  line-height: 30px;
+  color: $color-text-description;
+  margin: 0;
+  margin-bottom: 41px;
+}
+
+.card__price {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 24px;
+  color: $color-basic-black;
+  margin: 0;
+}
+
+//.card__button {}
