@@ -1,14 +1,32 @@
-//.main-header {}
+.main-header {
+  margin-bottom: 30px;
+
+  @media ($tablet-width) {
+    margin-bottom: 40px;
+  }
+
+  @media ($desktop-width) {
+    margin-bottom: 54px;
+  }
+}
 
 .main-header__wrapper {
-  margin-bottom: 30px;
+  outline: 3px dotted rgb(160, 12, 12);
+  outline-offset: -3px;
 }
 
 .main-header__title {
-  margin: 0 30px 120px;
+  margin-bottom: 120px;
+  outline: 3px solid rgb(139, 55, 55);
+  outline-offset: -3px;
 }
 
-//.main-header__list{}
+.main-header__list {
+  @media ($tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
 
 .main-header__item {
   display: block;
@@ -19,7 +37,15 @@
   color: $color-basic-white;
   text-decoration: none;
   background-color: $color-accent-green;
-  padding: 25px 160px 31px 30px;
+  padding: 25px 30px;
+  outline: 3px solid rgb(141, 21, 141);
+  outline-offset: -3px;
+
+  @media ($tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 36px;
+  }
 }
 
 .main-header__item--kidtoys {

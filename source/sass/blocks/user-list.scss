@@ -1,4 +1,8 @@
-//.user-list {}
+.user-list {
+  @media ($tablet-width) {
+    display: flex;
+  }
+}
 
 //.user-list__search {}
 

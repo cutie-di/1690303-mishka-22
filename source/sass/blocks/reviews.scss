@@ -1,19 +1,56 @@
-//.reviews {}
+.reviews {
+  margin-bottom: 45px;
+}
 
 .reviews__wrapper {
-  margin: 0 30px 45px;
+  position: relative;
+  outline: 3px dotted rgb(128, 214, 240);
+  outline-offset: -3px;
+
+  @media ($tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media ($desktop-width) {
+    padding-left: 175px;
+  }
 }
 
 .reviews__title {
   margin-bottom: 14px;
+  outline: 3px solid rgb(240, 128, 212);
+  outline-offset: -3px;
+
+  @media ($tablet-width) {
+    order: -2;
+    width: 50%;
+    flex-grow: 1;
+    margin-bottom: 39px;
+  }
+
+  @media ($desktop-width) {
+    margin-bottom: 35px;
+  }
 }
 
 .reviews__write {
   padding: 16px 65px;
+  outline: 3px solid rgb(160, 240, 128);
+  outline-offset: -3px;
+
+  @media ($tablet-width) {
+    order: -1;
+    width: 50%;
+    flex-grow: 1;
+  }
 }
 
 .reviews__list {
   margin: 0;
+  outline: 3px solid rgb(240, 128, 147);
+  outline-offset: -3px;
+  flex-grow: 2;
 }
 
 .reviews__item {
@@ -31,6 +68,16 @@
   color: $color-text-description;
   margin: 0;
   margin-bottom: 33px;
+  outline: 3px solid rgb(26, 16, 116);
+  outline-offset: -3px;
+
+  @media ($tablet-width) {
+    margin-bottom: 61px;
+  }
+
+  @media ($desktop-width) {
+    margin-bottom: 44px;
+  }
 }
 
 .reviews__author-name {
@@ -43,6 +90,8 @@
   color: $color-basic-black;
   text-align: left;
   margin-bottom: 10px;
+  outline: 3px solid rgb(44, 177, 17);
+  outline-offset: -3px;
 }
 
 .reviews__author-email {
@@ -55,10 +104,20 @@
   text-align: left;
   margin: 0;
   margin-bottom: 30px;
+  outline: 3px solid rgb(168, 83, 14);
+  outline-offset: -3px;
 }
 
 .reviews__pagination {
   margin: 0;
+  outline: 3px solid rgb(44, 12, 185);
+  outline-offset: -3px;
+
+  @media ($tablet-width) {
+    position: absolute;
+    right: 50px;
+    bottom: 60px;
+  }
 }
 
 //.reviews__pagination-button {}
