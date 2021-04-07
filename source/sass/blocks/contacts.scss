@@ -3,12 +3,15 @@
 }
 
 .contacts__wrapper {
+  position: relative;
   outline: 3px dotted rgb(172, 30, 30);
   outline-offset: -3px;
 
   @media ($desktop-width) {
     display: flex;
     flex-wrap: wrap;
+    width: 1150px;
+    margin: 0 auto;
   }
 }
 
@@ -25,6 +28,7 @@
   @media ($desktop-width) {
     width: 50%;
     flex-grow: 1;
+    padding: 0;
     padding-left: 235px;
   }
 }
@@ -44,12 +48,14 @@
   @media ($tablet-width) {
     font-size: 43px;
     line-height: 50px;
+    margin-top: 80px;
     margin-bottom: 48px;
   }
 
   @media ($desktop-width) {
     font-size: 53px;
     line-height: 57px;
+    margin-bottom: 36px;
   }
 }
 
@@ -78,7 +84,7 @@
   }
 
   @media ($desktop-width) {
-    margin-bottom: 70px;
+    margin-bottom: 30px;
   }
 }
 
@@ -121,6 +127,10 @@
 .contacts__map {
   margin-bottom: 42px;
 
+  @media ($tablet-width) {
+    margin-bottom: 5px;
+  }
+
   @media ($desktop-width) {
     width: 50%;
     flex-grow: 1;
@@ -157,11 +167,19 @@
   }
 
   @media ($desktop-width) {
+    position: absolute;
+    left: 0;
+    bottom: 40px;
     padding-left: 235px;
   }
 }
 
 .contacts__link {
-  margin: 0;
+  width: 260px;
+  margin: 0 auto;
   padding: 16px 34px;
+
+  @media ($tablet-width) {
+    width: 230px;
+  }
 }
