@@ -4,6 +4,10 @@
   list-style: none;
   margin: 0;
   padding: 0;
+
+  @media ($tablet-width) {
+    display: flex;
+  }
 }
 
 //.nav-delivery__item {}
@@ -16,6 +20,14 @@
   color: $color-basic-black;
   text-align: left;
   text-decoration: none;
+
+  @media ($tablet-width) {
+    display: none;
+  }
+
+  @media ($desktop-width) {
+    display: block;
+  }
 }
 
 .nav-delivery__post {

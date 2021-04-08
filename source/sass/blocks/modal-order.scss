@@ -1,6 +1,9 @@
 //.modal-order {}
 
-//.modal-order__wrapper {}
+.modal-order__wrapper {
+  outline: 3px solid rgb(13, 177, 40);
+  outline-offset: -3px;
+}
 
 .modal-order__title {
   font-family: inherit;
@@ -13,11 +16,17 @@
   padding: 0;
   margin: 0;
   margin-bottom: 14px;
+  outline: 3px solid rgb(156, 70, 12);
+  outline-offset: -3px;
 }
 
 //.modal-order__form {}
 
-//.modal-order__fieldset {}
+.modal-order__fieldset {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
 
 .modal-order__legend {
   font-family: inherit;
@@ -26,14 +35,26 @@
   line-height: 30px;
   color: $color-text-description;
   text-align: center;
+  padding: 0;
+  margin: 0;
   margin-bottom: 22px;
+  outline: 3px solid rgb(22, 12, 156);
+  outline-offset: -3px;
 }
 
 .modal-order__control {
+  display: flex;
+  justify-content: space-between;
   list-style: none;
   padding: 0;
   margin: 0;
   margin-bottom: 31px;
+  outline: 3px solid rgb(12, 116, 156);
+  outline-offset: -3px;
+
+  @media ($tablet-width) {
+    justify-content: space-around;
+  }
 }
 
 //.modal-order__control-checkbox {}
@@ -50,6 +71,7 @@
 }
 
 .modal-order__add {
+  display: block;
   font-family: inherit;
   font-weight: 700;
   font-size: 17px;
@@ -58,6 +80,6 @@
   color: $color-basic-white;
   background-color: $color-accent-green;
   text-align: center;
-  margin: 0 30px;
-  padding: 18px 67px;
+  margin: 0;
+  padding: 18px 78px;
 }

@@ -1,9 +1,14 @@
 //.social {}
 
 .social__list {
+  display: flex;
+  justify-content: space-between;
   list-style: none;
+  min-width: 142px;
   margin: 0;
   padding: 0;
+  outline: 3px solid rgb(12, 116, 156);
+  outline-offset: -3px;
 }
 
 //.social__item {}

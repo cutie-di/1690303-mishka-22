@@ -1,0 +1,25 @@
+.main-nav {
+  outline: 3px dotted rgb(240, 128, 221);
+  outline-offset: -3px;
+}
+
+//.main-nav__toggle {}
+
+//.main-nav__wrapper {}
+
+.main-nav__wrapper-first-level {
+  @media ($tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+//.main-nav__wrapper-second-level{}
+
+//.main-nav__list {}
+
+.main-nav__delivery {
+  @media ($mobile-width) {
+    display: none;
+  }
+}
