@@ -5,6 +5,12 @@
 
   @media ($tablet-width) {
     display: flex;
+    width: 50%;
+    order: 2;
+  }
+
+  @media ($desktop-width) {
+    order: -1;
   }
 }
 

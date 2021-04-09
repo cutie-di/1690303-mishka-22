@@ -1,4 +1,13 @@
-//.nav-delivery {}
+.nav-delivery {
+  @media ($tablet-width) {
+    order: 3;
+  }
+
+  @media ($desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 
 .nav-delivery__list {
   list-style: none;
@@ -7,6 +16,10 @@
 
   @media ($tablet-width) {
     display: flex;
+  }
+
+  @media ($desktop-width) {
+    width: 50%;
   }
 }
 
@@ -40,4 +53,8 @@
   text-align: right;
   margin: 0;
   padding: 0;
+
+  @media ($desktop-width) {
+    width: 50%;
+  }
 }
