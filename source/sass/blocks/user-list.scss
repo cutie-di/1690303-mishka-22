@@ -1,6 +1,7 @@
 .user-list {
   @media ($tablet-width) {
     display: flex;
+    width: 50%;
   }
 }
 
@@ -29,4 +30,8 @@
   text-decoration: none;
   margin: 27px 0;
   margin-left: 76px;
+
+  @media ($tablet-width) {
+    margin: 0;
+  }
 }

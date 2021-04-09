@@ -223,6 +223,9 @@
     left: 0;
     bottom: 0;
     margin-right: 50%;
+  }
+
+  @media ($desktop-width) {
     padding-left: 175px;
   }
 }

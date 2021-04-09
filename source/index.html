@@ -12,65 +12,62 @@
 <body class="page__body">
 
   <header class="page-header container">
-    <a class="page-header__logo" href="index.html">
-      <img src="img/logo/header_logo_mobile.svg" width="86" height="35" alt="Логотип «Мишка»">
-    </a>
-
     <nav class="main-nav">
 
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-nav__wrapper">
 
-        <div class="main-nav__wrapper-first-level">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a class="site-list__link" href="catalog.html">
-                Каталог товаров
+        <a class="main-nav__logo" href="index.html">
+          <img src="img/logo/header_logo_mobile.svg" width="86" height="35" alt="Логотип «Мишка»">
+        </a>
+
+        <!--  <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>-->
+
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link" href="catalog.html">
+              Каталог товаров
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="form.html">
+              Вязание на заказ
+            </a>
+          </li>
+        </ul>
+
+        <div class="main-nav__list user-list">
+          <form class="user-list__search">
+            <button class="user-list__button" type="button" aria-label="Кнопка поиска по сайту">
+            </button>
+            <label class="visually-hidden" for="search-input-field">Поле поиска</label>
+            <input class="user-list__input" type="search" name="search-input" id="search-input-field"
+              placeholder="Поиск по сайту">
+          </form>
+
+          <a class="user-list__cart" href="#">
+            Корзина: пока пуста
+          </a>
+        </div>
+
+        <div class="main-nav__delivery nav-delivery">
+          <ul class="nav-delivery__list">
+            <li class="nav-delivery__item">
+              <a class="nav-delivery__link" href="#">
+                Новые поступления
               </a>
             </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="form.html">
-                Вязание на заказ
+            <li class="nav-delivery__item">
+              <a class="nav-delivery__link" href="#">
+                Распродажа
               </a>
             </li>
           </ul>
 
-          <div class="main-nav__list user-list">
-            <form class="user-list__search">
-              <button class="user-list__button" type="button" aria-label="Кнопка поиска по сайту">
-              </button>
-              <label class="visually-hidden" for="search-input-field">Поле поиска</label>
-              <input class="user-list__input" type="search" name="search-input" id="search-input-field"
-                placeholder="Поиск по сайту">
-            </form>
-
-            <a class="user-list__cart" href="#">
-              Корзина: пока пуста
-            </a>
-          </div>
+          <p class="nav-delivery__post">
+            Бесплатная доставка по России
+          </p>
         </div>
 
-        <div class="main-nav__wrapper-second-level">
-          <div class="main-nav__delivery nav-delivery">
-            <ul class="nav-delivery__list">
-              <li class="nav-delivery__item">
-                <a class="nav-delivery__link" href="#">
-                  Новые поступления
-                </a>
-              </li>
-              <li class="nav-delivery__item">
-                <a class="nav-delivery__link" href="#">
-                  Распродажа
-                </a>
-              </li>
-            </ul>
-
-            <p class="nav-delivery__post">
-              Бесплатная доставка по России
-            </p>
-          </div>
-
-        </div>
       </div>
     </nav>
   </header>
