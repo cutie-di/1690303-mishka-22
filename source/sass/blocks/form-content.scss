@@ -44,7 +44,7 @@
   @media ($desktop-width) {
     width: 1150px;
     margin: 0 auto;
-    padding-left: 106px;
+    padding-left: 110px;
   }
 }
 
@@ -58,6 +58,7 @@
   }
 
   @media ($desktop-width) {
+    padding-top: 63px;
     padding-bottom: 66px;
   }
 }
@@ -181,7 +182,7 @@
   }
 
   @media ($desktop-width) {
-    padding-left: 82px;
+    padding-left: 84px;
   }
 }
 
@@ -190,8 +191,8 @@
 
   @media ($tablet-width) {
     align-items: baseline;
-    padding-top: 66px;
-    padding-bottom: 61px;
+    padding-top: 49px;
+    padding-bottom: 51px;
   }
 }
 
@@ -214,7 +215,7 @@
     flex-direction: row;
 
     &:not(:last-child) {
-      margin-bottom: 51px;
+      margin-bottom: 24px;
     }
   }
 }
@@ -233,6 +234,7 @@
   @media ($tablet-width) {
     font-size: 19px;
     line-height: 18px;
+    padding-top: 17px;
   }
 
   @media ($desktop-width) {
@@ -248,6 +250,7 @@
   color: $color-text-description;
   border: none;
   padding: 0;
+  height: 52px;
 
   &::placeholder {
     color: $color-basic-black-opacity-03;
@@ -266,7 +269,7 @@
 
 .form-content__text-input--name {
   @media ($tablet-width) {
-    padding-left: 38px;
+    padding-left: 44px;
   }
 }
 
@@ -278,8 +281,8 @@
   @media ($tablet-width) {
     flex-direction: row;
     align-items: baseline;
-    padding-top: 61px;
-    padding-bottom: 49px;
+    padding-top: 47px;
+    padding-bottom: 26px;
   }
 }
 
@@ -288,6 +291,10 @@
 
   @media ($mobile-width) {
     margin-top: 19px;
+  }
+
+  @media ($tablet-width) {
+    padding-left: 18px;
   }
 }
 
@@ -299,7 +306,7 @@
   @media ($tablet-width) {
     flex-direction: row;
     align-items: baseline;
-    padding-bottom: 63px;
+    padding-bottom: 51px;
   }
 }
 
@@ -309,6 +316,10 @@
   @media ($mobile-width) {
     margin-top: 21px;
   }
+
+  @media ($tablet-width) {
+    padding-left: 18px;
+  }
 }
 
 .form-content__fieldset--add {
@@ -317,7 +328,7 @@
   @media ($tablet-width) {
     align-items: baseline;
     padding-top: 50px;
-    padding-bottom: 49px;
+    padding-bottom: 53px;
   }
 
   @media ($desktop-width) {
