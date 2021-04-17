@@ -1,11 +1,18 @@
 .contacts {
+  margin-top: 38px;
   margin-bottom: 39px;
+
+  @media ($tablet-width) {
+    margin-bottom: 57px;
+  }
+
+  @media ($desktop-width) {
+    margin-bottom: 103px;
+  }
 }
 
 .contacts__wrapper {
   position: relative;
-  outline: 3px dotted rgb(172, 30, 30);
-  outline-offset: -3px;
 
   @media ($desktop-width) {
     display: flex;
@@ -17,8 +24,8 @@
 
 .contacts__wrapper-info {
   @media ($mobile-width) {
-    margin: 0 auto;
     padding: 0 30px;
+    margin: 0 auto;
   }
 
   @media ($tablet-width) {
@@ -29,7 +36,7 @@
     width: 50%;
     flex-grow: 1;
     padding: 0;
-    padding-left: 235px;
+    padding-left: 225px;
   }
 }
 
@@ -41,26 +48,29 @@
   color: $color-basic-black;
   text-align: left;
   margin: 0;
-  margin-bottom: 28px;
-  outline: 3px solid rgb(135, 128, 240);
-  outline-offset: -3px;
+  margin-bottom: 26px;
 
   @media ($tablet-width) {
     font-size: 43px;
     line-height: 50px;
-    margin-top: 80px;
+    margin-top: 69px;
     margin-bottom: 48px;
   }
 
   @media ($desktop-width) {
     font-size: 53px;
     line-height: 57px;
+    margin-top: 111px;
     margin-bottom: 36px;
   }
 }
 
 .contacts__table {
   margin-bottom: 62px;
+
+  @media ($tablet-width) {
+    margin-bottom: 45px;
+  }
 }
 
 .contacts__table tbody {
@@ -75,13 +85,7 @@
 
 .contacts__email {
   display: flex;
-  outline: 3px solid rgb(12, 116, 156);
-  outline-offset: -3px;
-  margin-bottom: 45px;
-
-  @media ($tablet-width) {
-    margin-right: 9%;
-  }
+  margin-bottom: 30px;
 
   @media ($desktop-width) {
     margin-bottom: 30px;
@@ -90,8 +94,6 @@
 
 .contacts__adress {
   display: flex;
-  outline: 3px solid rgb(156, 12, 113);
-  outline-offset: -3px;
 }
 
 .contacts__feature {
@@ -101,7 +103,7 @@
   line-height: 30px;
   text-align: left;
   color: $color-text-description;
-  width: 76px;
+  min-width: 76px;
   padding: 0;
 
   @media ($tablet-width) {
@@ -121,14 +123,16 @@
   @media ($tablet-width) {
     font-size: 17px;
     line-height: 30px;
+    min-width: 255px;
   }
 }
 
 .contacts__map {
-  margin-bottom: 42px;
+  margin-bottom: 36px;
 
   @media ($tablet-width) {
-    margin-bottom: 5px;
+    margin-top: 34px;
+    margin-bottom: 0;
   }
 
   @media ($desktop-width) {
@@ -164,22 +168,24 @@
 
   @media ($tablet-width) {
     padding: 0 50px;
+    margin-top: 53px;
   }
 
   @media ($desktop-width) {
     position: absolute;
     left: 0;
-    bottom: 40px;
-    padding-left: 235px;
+    bottom: 3px;
+    padding-left: 225px;
   }
 }
 
 .contacts__link {
   width: 260px;
   margin: 0 auto;
-  padding: 16px 34px;
+  padding: 14px 34px;
 
   @media ($tablet-width) {
+    font-size: 17px;
     width: 230px;
   }
 }

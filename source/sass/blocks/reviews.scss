@@ -1,31 +1,81 @@
 .reviews {
-  margin-bottom: 45px;
+  position: relative;
+
+  @media ($mobile-width) {
+    padding-bottom: 51px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 6px;
+      left: 0;
+      bottom: 0;
+      background-image: url("../../img/zigzag-line-mobile.svg");
+      background-repeat: repeat-x;
+    }
+  }
+
+  @media ($tablet-width) {
+    padding-bottom: 101px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 17px;
+      left: 0;
+      bottom: 0;
+      background-image: url("../../img/zigzag-line-tablet.svg");
+      background-repeat: repeat-x;
+    }
+  }
+
+  @media ($desktop-width) {
+    padding-bottom: 157px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 1050px;
+      height: 23px;
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: url("../../img/zigzag-line-desktop.svg");
+      background-repeat: repeat-x;
+    }
+  }
 }
 
 .reviews__wrapper {
   position: relative;
-  outline: 3px dotted rgb(128, 214, 240);
-  outline-offset: -3px;
+
+  @media ($mobile-width) {
+    max-width: 500px;
+  }
 
   @media ($tablet-width) {
     display: flex;
     flex-wrap: wrap;
+    max-width: 900px;
   }
 
   @media ($desktop-width) {
-    padding-left: 175px;
+    max-width: 1150px;
+    padding-left: 225px;
   }
 }
 
 .reviews__title {
   margin-bottom: 14px;
-  outline: 3px solid rgb(240, 128, 212);
-  outline-offset: -3px;
 
   @media ($tablet-width) {
     order: -2;
     width: 50%;
     flex-grow: 1;
+    margin-top: 82px;
     margin-bottom: 39px;
   }
 
@@ -34,11 +84,7 @@
   }
 }
 
-.reviews__write {
-  padding: 16px 65px;
-  outline: 3px solid rgb(160, 240, 128);
-  outline-offset: -3px;
-
+.review__write-wrapper {
   @media ($tablet-width) {
     order: -1;
     width: 50%;
@@ -46,10 +92,25 @@
   }
 }
 
+.reviews__write {
+  padding: 14px 65px;
+
+  @media ($tablet-width) {
+    font-size: 17px;
+    width: 175px;
+    padding: 14px 26px;
+    margin-top: 78px;
+    margin-left: 159px;
+  }
+
+  @media ($desktop-width) {
+    margin-top: 85px;
+    margin-left: 262px;
+  }
+}
+
 .reviews__list {
   margin: 0;
-  outline: 3px solid rgb(240, 128, 147);
-  outline-offset: -3px;
   flex-grow: 2;
 }
 
@@ -68,10 +129,15 @@
   color: $color-text-description;
   margin: 0;
   margin-bottom: 33px;
-  outline: 3px solid rgb(26, 16, 116);
-  outline-offset: -3px;
+
+  @media (min-width: 330px) {
+    br {
+      display: none;
+    }
+  }
 
   @media ($tablet-width) {
+    font-size: 17px;
     margin-bottom: 61px;
   }
 
@@ -89,9 +155,15 @@
   line-height: 24px;
   color: $color-basic-black;
   text-align: left;
-  margin-bottom: 10px;
-  outline: 3px solid rgb(44, 177, 17);
-  outline-offset: -3px;
+  margin-bottom: 4px;
+
+  @media ($tablet-width) {
+    font-size: 18px;
+  }
+
+  @media ($desktop-width) {
+    font-size: 17px;
+  }
 }
 
 .reviews__author-email {
@@ -103,25 +175,70 @@
   color: $color-text-description;
   text-align: left;
   margin: 0;
-  margin-bottom: 30px;
-  outline: 3px solid rgb(168, 83, 14);
-  outline-offset: -3px;
+  margin-bottom: 29px;
 }
 
 .reviews__pagination {
-  margin: 0;
-  outline: 3px solid rgb(44, 12, 185);
-  outline-offset: -3px;
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 37px;
+  width: 260px;
 
   @media ($tablet-width) {
+    justify-content: space-between;
     position: absolute;
-    right: 50px;
-    bottom: 60px;
+    margin-right: 50px;
+    width: 175px;
+    right: 0;
+    bottom: -7px;
   }
 }
 
-//.reviews__pagination-button {}
+.reviews__pagination-button {
+  display: block;
+  position: relative;
+  border: 1px solid $color-main-nav-decoration;
+  background-color: transparent;
+  padding: 25px 64px;
 
-//.reviews__pagination-button--previous {}
+  @media ($tablet-width) {
+    border: none;
+    padding: 25px 43px;
+  }
+}
 
-//.reviews__pagination-button--next {}
+.reviews__pagination-button--previous {
+  &::after {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 26px;
+    left: 37px;
+    top: 11px;
+    background-image: url("../../img/button-arrow-back.svg");
+    background-repeat: no-repeat;
+
+    @media ($tablet-width) {
+      left: 19px;
+      top: 10px;
+    }
+  }
+}
+
+.reviews__pagination-button--next {
+  &::after {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 26px;
+    right: 41px;
+    top: 11px;
+    background-image: url("../../img/button-arrow-next.svg");
+    background-repeat: no-repeat;
+
+    @media ($tablet-width) {
+      right: 19px;
+      top: 10px;
+    }
+  }
+}

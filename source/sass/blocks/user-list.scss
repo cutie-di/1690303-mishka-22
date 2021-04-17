@@ -1,37 +1,124 @@
 .user-list {
+  position: relative;
+
   @media ($tablet-width) {
     display: flex;
-    width: 50%;
+    justify-content: space-between;
+    width: 52%;
+    box-shadow: 0 1px 0 $color-basic-black-opacity-01;
+    padding: 0;
+    padding-right: 50px;
+  }
+
+  @media ($desktop-width) {
+    width: 35%;
   }
 }
 
-//.user-list__search {}
+.user-list__search {
+  padding: 0 30px;
+  box-shadow: 0 1px 0 $color-main-nav-decoration, inset 0 1px 0 $color-main-nav-decoration;
 
-//.user-list__button {}
-
-.user-list__input {
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 24px;
-  color: $color-basic-black;
-  text-align: left;
-  text-decoration: none;
+  @media ($tablet-width) {
+    padding: 0;
+    box-shadow: none;
+  }
 }
 
-.user-list__cart {
+.user-list__button {
+  position: absolute;
+  border: 0;
+  background-color: transparent;
+  width: 18px;
+  height: 18px;
+  padding: 0;
+
+  @media ($tablet-width) {
+    border-left: 1px solid $color-basic-black-opacity-01;
+    border-right: 1px solid $color-basic-black-opacity-01;
+    left: 1px;
+    padding: 44px 41px;
+  }
+}
+
+.user-list__button svg {
+  display: block;
+  position: absolute;
+  fill-opacity: 0.2;
+
+  @media ($mobile-width) {
+    top: 32px;
+    left: 2px;
+  }
+
+  @media ($tablet-width) {
+    top: 36px;
+    right: 31px;
+  }
+}
+
+.user-list__input {
   display: block;
   font-family: inherit;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
+  text-align: left;
+  border: none;
+  padding-top: 28px;
+  padding-bottom: 27px;
+  padding-left: 46px;
+  padding-right: 30px;
+
+  &::placeholder {
+    color: $color-basic-black;
+  }
+
+  @media ($tablet-width) {
+    display: none;
+  }
+}
+
+.user-list__cart {
+  display: block;
+  position: relative;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
   color: $color-basic-black;
   text-align: left;
   text-decoration: none;
-  margin: 27px 0;
-  margin-left: 76px;
+  padding-right: 30px;
+  padding-left: 76px;
+  padding-top: 29px;
+  padding-bottom: 26px;
+  box-shadow: 0 1px 0 $color-main-nav-decoration, inset 0 1px 0 $color-main-nav-decoration;
 
   @media ($tablet-width) {
-    margin: 0;
+    box-shadow: none;
+    padding: 0;
+    padding-top: 33px;
+    padding-bottom: 31px;
+    padding-left: 83px;
+  }
+
+  @media ($desktop-width) {
+    padding-top: 34px;
+    padding-left: 85px;
+  }
+}
+
+.user-list__cart-icon {
+  position: absolute;
+  top: 31px;
+  left: 30px;
+  width: 21px;
+  height: 18px;
+  opacity: 0.2;
+
+  @media ($tablet-width) {
+    top: 35px;
+    left: 31px;
   }
 }
