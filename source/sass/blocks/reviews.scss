@@ -11,7 +11,7 @@
       height: 6px;
       left: 0;
       bottom: 0;
-      background-image: url("../../img/zigzag-line-mobile.svg");
+      background-image: url("../img/zigzag-line-mobile.svg");
       background-repeat: repeat-x;
     }
   }
@@ -26,7 +26,7 @@
       height: 17px;
       left: 0;
       bottom: 0;
-      background-image: url("../../img/zigzag-line-tablet.svg");
+      background-image: url("../img/zigzag-line-tablet.svg");
       background-repeat: repeat-x;
     }
   }
@@ -43,7 +43,7 @@
       left: 0;
       right: 0;
       bottom: 0;
-      background-image: url("../../img/zigzag-line-desktop.svg");
+      background-image: url("../img/zigzag-line-desktop.svg");
       background-repeat: repeat-x;
     }
   }
@@ -80,7 +80,7 @@
   }
 
   @media ($desktop-width) {
-    margin-bottom: 35px;
+    margin-bottom: 37px;
   }
 }
 
@@ -143,6 +143,7 @@
 
   @media ($desktop-width) {
     margin-bottom: 44px;
+    padding-right: 61px;
   }
 }
 
@@ -181,7 +182,7 @@
 .reviews__pagination {
   display: flex;
   margin: 0 auto;
-  margin-bottom: 37px;
+  margin-bottom: 39px;
   width: 260px;
 
   @media ($tablet-width) {
@@ -215,7 +216,7 @@
     height: 26px;
     left: 37px;
     top: 11px;
-    background-image: url("../../img/button-arrow-back.svg");
+    background-image: url("../img/button-arrow-back.svg");
     background-repeat: no-repeat;
 
     @media ($tablet-width) {
@@ -233,7 +234,7 @@
     height: 26px;
     right: 41px;
     top: 11px;
-    background-image: url("../../img/button-arrow-next.svg");
+    background-image: url("../img/button-arrow-next.svg");
     background-repeat: no-repeat;
 
     @media ($tablet-width) {

@@ -1,6 +1,10 @@
 .modal-order {
   box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
 
+  @media ($mobile-width) {
+    max-width: 320px;
+  }
+
   @media ($tablet-width) {
     width: 566px;
     height: 336px;
@@ -109,6 +113,7 @@
   color: $color-basic-white;
   background-color: $color-accent-green;
   text-align: center;
+  border: none;
   margin: 0 auto;
   padding: 17px 81px;
 

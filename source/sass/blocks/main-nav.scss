@@ -1,13 +1,8 @@
 .main-nav {
-  margin: 0 auto;
-
-  @media ($mobile-width) {
-    max-width: 500px;
-  }
-
   @media ($tablet-width) {
     padding: 0;
     max-width: 900px;
+    margin: 0 auto;
   }
 
   @media ($desktop-width) {
@@ -29,14 +24,13 @@
 
 .main-nav__logo {
   text-align: center;
-  box-shadow: 0 1px 0 $color-main-nav-decoration, inset 0 1px 0 $color-main-nav-decoration;
   padding: 22px 30px;
   padding-bottom: 19px;
 
   @media ($tablet-width) {
     text-align: start;
     width: 48%;
-    box-shadow: 0 1px 0 $color-basic-black-opacity-01;
+    box-shadow: none;
     padding-left: 50px;
     padding-right: 0;
     padding-bottom: 17px;

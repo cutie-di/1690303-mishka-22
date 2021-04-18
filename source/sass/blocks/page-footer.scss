@@ -3,11 +3,20 @@
 }
 
 .page-footer__wrapper {
+  @media ($mobile-width) {
+    max-width: 500px;
+  }
+
   @media ($tablet-width) {
     display: flex;
     justify-content: space-between;
+    max-width: 900px;
     padding-top: 48px;
     padding-bottom: 57px;
+  }
+
+  @media ($desktop-width) {
+    max-width: 1150px;
   }
 }
 

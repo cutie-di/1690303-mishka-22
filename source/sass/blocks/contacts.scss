@@ -24,12 +24,15 @@
 
 .contacts__wrapper-info {
   @media ($mobile-width) {
+    max-width: 500px;
     padding: 0 30px;
     margin: 0 auto;
   }
 
   @media ($tablet-width) {
+    max-width: 900px;
     padding: 0 50px;
+    margin: 0 auto;
   }
 
   @media ($desktop-width) {
@@ -61,7 +64,7 @@
     font-size: 53px;
     line-height: 57px;
     margin-top: 111px;
-    margin-bottom: 36px;
+    margin-bottom: 33px;
   }
 }
 
@@ -113,6 +116,7 @@
 }
 
 .contacts__value {
+
   font-family: inherit;
   font-weight: 400;
   font-size: 14px;
@@ -124,6 +128,22 @@
     font-size: 17px;
     line-height: 30px;
     min-width: 255px;
+  }
+}
+
+.contacts__value-link-email {
+  position: relative;
+  text-decoration: none;
+  color: $color-text-description;
+  border-bottom: 1px solid $color-form-decoration-green;
+  padding-bottom: 2px;
+
+  @media ($tablet-width) {
+    padding-bottom: 3px;
+  }
+
+  @media ($desktop-width) {
+    padding-bottom: 7px;
   }
 }
 
@@ -174,7 +194,7 @@
   @media ($desktop-width) {
     position: absolute;
     left: 0;
-    bottom: 3px;
+    bottom: 4px;
     padding-left: 225px;
   }
 }
