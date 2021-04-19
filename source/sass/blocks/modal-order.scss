@@ -1,9 +1,17 @@
-//.modal-order {}
+.modal-order {
+  box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
 
-.modal-order__wrapper {
-  outline: 3px solid rgb(13, 177, 40);
-  outline-offset: -3px;
+  @media ($mobile-width) {
+    max-width: 320px;
+  }
+
+  @media ($tablet-width) {
+    width: 566px;
+    height: 336px;
+  }
 }
+
+//.modal-order__wrapper {}
 
 .modal-order__title {
   font-family: inherit;
@@ -15,12 +23,23 @@
   text-transform: uppercase;
   padding: 0;
   margin: 0;
+  padding-top: 28px;
   margin-bottom: 14px;
-  outline: 3px solid rgb(156, 70, 12);
-  outline-offset: -3px;
+
+  @media ($tablet-width) {
+    font-size: 30px;
+    line-height: 57px;
+    padding-top: 39px;
+
+    br {
+      display: none;
+    }
+  }
 }
 
-//.modal-order__form {}
+.modal-order__form {
+  padding-bottom: 43px;
+}
 
 .modal-order__fieldset {
   padding: 0;
@@ -37,9 +56,13 @@
   text-align: center;
   padding: 0;
   margin: 0;
-  margin-bottom: 22px;
-  outline: 3px solid rgb(22, 12, 156);
-  outline-offset: -3px;
+  margin-bottom: 23px;
+
+  @media ($tablet-width) {
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 17px;
+  }
 }
 
 .modal-order__control {
@@ -48,16 +71,26 @@
   list-style: none;
   padding: 0;
   margin: 0;
-  margin-bottom: 31px;
-  outline: 3px solid rgb(12, 116, 156);
-  outline-offset: -3px;
+  margin-bottom: 30px;
 
   @media ($tablet-width) {
-    justify-content: space-around;
+    padding-left: 58px;
+    padding-right: 58px;
   }
 }
 
-//.modal-order__control-checkbox {}
+.modal-order__control-checkbox {
+  padding: 14px 34px;
+  border: 2px solid $color-basic-grey-opacity-01;
+
+  &--checked {
+    border: 2px solid $color-accent-green;
+  }
+
+  @media ($tablet-width) {
+    padding: 14px 46px;
+  }
+}
 
 //.modal-order__control-input {}
 
@@ -80,6 +113,11 @@
   color: $color-basic-white;
   background-color: $color-accent-green;
   text-align: center;
-  margin: 0;
-  padding: 18px 78px;
+  border: none;
+  margin: 0 auto;
+  padding: 17px 81px;
+
+  @media ($tablet-width) {
+    padding: 18px 126px;
+  }
 }
