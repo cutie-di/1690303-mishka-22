@@ -1,12 +1,11 @@
 .main-nav {
   @media ($tablet-width) {
     padding: 0;
-    max-width: 900px;
-    margin: 0 auto;
-  }
+    background: linear-gradient(180deg, $color-basic-white 89px, $color-background-main-header 89px);
 
-  @media ($desktop-width) {
-    max-width: 1150px;
+    &--side-header {
+      background: linear-gradient(180deg, $color-basic-white 89px, $color-page-background-grey 89px);
+    }
   }
 }
 
@@ -16,9 +15,15 @@
   position: relative;
 
   @media ($tablet-width) {
+    max-width: 900px;
+    margin: 0 auto;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+  }
+
+  @media ($desktop-width) {
+    max-width: 1150px;
   }
 }
 
@@ -68,9 +73,9 @@
   height: 40px;
   cursor: pointer;
   border: none;
+  background-color: $color-basic-white;
   padding: 0;
   padding-right: 30px;
-  background-color: transparent;
 
   @media ($tablet-width) {
     display: none;
