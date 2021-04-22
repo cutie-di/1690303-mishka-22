@@ -1,10 +1,24 @@
 .production {
   margin-bottom: 58px;
+
+  @media ($mobile-width) {
+    max-width: 500px;
+  }
+
+  @media ($tablet-width) {
+    max-width: 900px;
+    margin-bottom: 64px;
+  }
+
+  @media ($desktop-width) {
+    max-width: 1150px;
+  }
 }
 
 .production__wrapper {
   display: flex;
   flex-direction: column;
+  border: 1px solid $color-border-decoration-grey;
 
   @media ($desktop-width) {
     display: grid;
@@ -22,10 +36,8 @@
   padding: 0;
   margin: 0;
   padding-left: 91px;
-  padding-top: 27px;
+  padding-top: 24px;
   padding-bottom: 27px;
-  outline: 3px solid rgb(21, 23, 124);
-  outline-offset: -3px;
 
   @media ($mobile-width) {
     order: -1;
@@ -47,6 +59,7 @@
 }
 
 .production__image-wrapper {
+  margin: 0 auto;
   margin-bottom: 30px;
 
   @media ($tablet-width) {
@@ -60,9 +73,6 @@
 }
 
 .production__image {
-  outline: 3px solid rgb(124, 21, 21);
-  outline-offset: -3px;
-
   @media ($tablet-width) {
     width: 668px;
     height: 455px;
@@ -81,11 +91,8 @@
   color: $color-text-description;
   margin: 0;
   margin-bottom: 40px;
-  padding-left: 33px;
-  padding-right: 33px;
-
-  outline: 3px solid rgb(21, 124, 30);
-  outline-offset: -3px;
+  padding-left: 32px;
+  padding-right: 32px;
 
   @media ($tablet-width) {
     font-size: 15px;
@@ -106,15 +113,21 @@
 .production__order-button-wrapper {
   padding: 0 34px 31px;
 
+  @media ($tablet-width) {
+    padding: 0 41px 45px;
+  }
+
   @media ($desktop-width) {
     grid-column: 2;
     grid-row: 3;
     align-self: center;
-    padding-top: 37px;
-    padding-bottom: 54px;
+    padding-top: 34px;
+    padding-bottom: 58px;
+    padding-left: 80px;
+    padding-right: 56px;
   }
 }
 
 .production__order-button {
-  padding: 15px 11px;
+  padding: 14px 11px;
 }
