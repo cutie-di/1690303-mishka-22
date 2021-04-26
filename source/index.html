@@ -5,6 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Мишка</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/icons/180.png">
+  <link rel="manifest" href="manifest.webmanifest">
 
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -17,7 +21,11 @@
       <div class="main-nav__wrapper">
 
         <a class="main-nav__logo" href="index.html">
-          <img src="img/logo/header_logo_mobile.svg" width="86" height="35" alt="Логотип «Мишка»">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/logo/header_logo_desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo/header_logo_tablet.svg">
+            <img src="img/logo/header_logo_mobile.svg" width="86" height="35" alt="Логотип «Мишка»">
+          </picture>
         </a>
 
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -130,14 +138,18 @@
         </div>
 
         <div class="top-item__image-wrapper">
-          <img class="top-item__image" src="img/htmlacademy.svg"
-            alt="Изображение трех корзинок из трикотажной пряжи. Большая, средняя и маленькая, вложенные друг в друга. Все двухцветные: большая и средняя - зелено-серой расцветки, маленькая - розово-белой"
-            width="260" height="315">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/top-item-desktop.jpg 1x, img/top-item-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/top-item-tablet.jpg 1x, img/top-item-tablet@2x.jpg 2x">
+            <img class="top-item__image" src="img/top-item-mobile.jpg" srcset="img/top-item-mobile@2x.jpg 2x"
+              alt="Изображение трех корзинок из трикотажной пряжи. Большая, средняя и маленькая, вложенные друг в друга. Все двухцветные: большая и средняя - зелено-серой расцветки, маленькая - розово-белой"
+              width="260" height="315">
+          </picture>
         </div>
 
         <div class="top-item__order-wrapper">
           <p class="top-item__price">Цена: 990 руб.</p>
-          <a class="top-item__order button" href="#">Заказать</a>
+          <a class="top-item__order button" href="oder.html">Заказать</a>
         </div>
 
       </div>
@@ -323,35 +335,37 @@
     </div>
   </footer>
 
-  <section class="modal modal-order container">
-    <h2 class="visually-hidden">Всплывающее окно заказа товара</h2>
-    <div class="modal-order__wrapper">
-      <h3 class="modal-order__title">Добавить <br>в корзину</h3>
-      <form class="modal-order__form" method="get" action="https://echo.htmlacademy.ru">
-        <fieldset class="modal-order__fieldset">
-          <legend class="modal-order__legend">Выберите размер:</legend>
-          <ul class="modal-order__control">
-            <li class="modal-order__control-checkbox modal-order__control-checkbox--checked">
-              <input class="modal-order__control-input visually-hidden" checked type="checkbox" name="s-value"
-                id="s-size">
-              <label class="modal-order__control-label" for="s-size">S</label>
-            </li>
+  <section class="overlay">
+    <div class="modal modal-order container">
+      <h2 class="visually-hidden">Всплывающее окно заказа товара</h2>
+      <div class="modal-order__wrapper">
+        <h3 class="modal-order__title">Добавить <br>в корзину</h3>
+        <form class="modal-order__form" method="get" action="https://echo.htmlacademy.ru">
+          <fieldset class="modal-order__fieldset">
+            <legend class="modal-order__legend">Выберите размер:</legend>
+            <ul class="modal-order__control">
+              <li class="modal-order__control-checkbox modal-order__control-checkbox--checked">
+                <input class="modal-order__control-input visually-hidden" checked type="checkbox" name="s-value"
+                  id="s-size">
+                <label class="modal-order__control-label" for="s-size">S</label>
+              </li>
 
-            <li class="modal-order__control-checkbox">
-              <input class="modal-order__control-input visually-hidden" type="checkbox" name="m-value" id="m-size">
-              <label class="modal-order__control-label" for="m-size">M</label>
-            </li>
+              <li class="modal-order__control-checkbox">
+                <input class="modal-order__control-input visually-hidden" type="checkbox" name="m-value" id="m-size">
+                <label class="modal-order__control-label" for="m-size">M</label>
+              </li>
 
-            <li class="modal-order__control-checkbox">
-              <input class="modal-order__control-input visually-hidden" type="checkbox" name="l-value" id="l-size">
-              <label class="modal-order__control-label" for="l-size">L</label>
-            </li>
-          </ul>
-        </fieldset>
+              <li class="modal-order__control-checkbox">
+                <input class="modal-order__control-input visually-hidden" type="checkbox" name="l-value" id="l-size">
+                <label class="modal-order__control-label" for="l-size">L</label>
+              </li>
+            </ul>
+          </fieldset>
 
-        <button class="modal-order__add" type="submit">Добавить</button>
+          <button class="modal-order__add" type="submit">Добавить</button>
 
-      </form>
+        </form>
+      </div>
     </div>
   </section>
 

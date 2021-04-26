@@ -150,14 +150,44 @@
 .contacts__map {
   margin-bottom: 36px;
 
+  @media ($mobile-width) {
+    background-image: url("../img/map-mobile.png");
+    background-repeat: no-repeat;
+    background-size: 320px 455px;
+    background-position: center top;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/map-mobile@2x.png");
+      background-size: 320px 455px;
+    }
+  }
+
   @media ($tablet-width) {
     margin-top: 34px;
     margin-bottom: 0;
+    background-image: url("../img/map-tablet.png");
+    background-repeat: no-repeat;
+    background-size: 768px 457px;
+    background-position: center top;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/map-tablet@2x.png");
+      background-size: 768px 457px;
+    }
   }
 
   @media ($desktop-width) {
     width: 50%;
     flex-grow: 1;
+    background-image: url("../img/map-desktop.png");
+    background-repeat: no-repeat;
+    background-size: 527px 457px;
+    background-position: left top;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/map-desktop@2x.png");
+      background-size: 527px 457px;
+    }
   }
 }
 
