@@ -25,15 +25,15 @@ orderButton.addEventListener("click", function (evt) {
 
 orderClose.addEventListener("click", function (evt) {
   evt.preventDefault();
- orderPopup.classList.remove("modal-show");
- orderClose.classList.remove("modal-show");
+  orderPopup.classList.remove("modal-show");
+  orderClose.classList.remove("modal-show");
 });
 
 window.addEventListener("keydown", function (evt) {
-if (evt.keyCode === 27) {
-  if (orderClose.classList.contains("modal-show")) {
-   evt.preventDefault();
-   orderClose.classList.remove("modal-show");
-  }
+  if (evt.keyCode === 27) {
+    if (orderClose.classList.contains("modal-show")) {
+      evt.preventDefault();
+      orderClose.classList.remove("modal-show");
+    }
   }
 });
