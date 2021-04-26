@@ -1,9 +1,12 @@
 .modal-order {
+  display: none;
+  top: 50%;
+  transform: translateY(-50%);
   box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
-
-  @media ($mobile-width) {
-    max-width: 320px;
-  }
+  background-color: $color-basic-white;
+  z-index: 5;
+  bottom: auto;
+  width: 320px;
 
   @media ($tablet-width) {
     width: 566px;
@@ -120,4 +123,26 @@
   @media ($tablet-width) {
     padding: 18px 126px;
   }
+}
+
+.modal {
+  position: fixed;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  background-color: $color-basic-white-opacity-09;
+}
+
+.modal-show {
+  display: block;
 }
