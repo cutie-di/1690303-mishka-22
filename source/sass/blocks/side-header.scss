@@ -1,11 +1,8 @@
 .side-header {
-  //margin-bottom: 17px;
   background-color: $color-page-background-grey;
 
   @media ($tablet-width) {
     position: relative;
-    padding-left: 50px;
-    padding-right: 50px;
 
     &::after {
       position: absolute;
@@ -27,7 +24,7 @@
       height: 34px;
       left: 0;
       bottom: -1px;
-      background-image: url("../img/zigzag-header-desktop.svg");
+      background-image: url("../img/zigzag-side-header-desktop.svg");
       background-repeat: repeat-x;
     }
   }
@@ -55,7 +52,7 @@
 
   @media ($tablet-width) {
     padding-top: 56px;
-    padding-bottom: 85px;
+    padding-bottom: 84px;
   }
 
   @media ($desktop-width) {

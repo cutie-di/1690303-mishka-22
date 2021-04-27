@@ -34,7 +34,7 @@
     font-size: 17px;
     line-height: 30px;
     max-width: 900px;
-    margin-top: 54px;
+    margin-top: 56px;
     margin-bottom: 17px;
   }
 
@@ -400,7 +400,7 @@
   @media ($tablet-width) {
     align-items: baseline;
     padding-top: 50px;
-    padding-bottom: 51px;
+    padding-bottom: 50px;
   }
 
   @media ($desktop-width) {
@@ -410,7 +410,10 @@
 
 .form-content__name-wrapper {
   flex-grow: 2;
-  padding-right: 175px;
+
+  @media ($desktop-width) {
+    padding-right: 175px;
+  }
 }
 
 .form-content__name-paragraph {
@@ -499,7 +502,7 @@
     flex-direction: row;
     align-items: baseline;
     padding-top: 45px;
-    padding-bottom: 20px;
+    padding-bottom: 21px;
   }
 
   @media ($desktop-width) {
