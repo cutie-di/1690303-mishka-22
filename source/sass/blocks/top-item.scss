@@ -229,8 +229,8 @@
 }
 
 .top-item__image {
-  width: 260px;
-  height: 315px;
+  width: 100%;
+  height: auto;
   margin-bottom: 25px;
 
   @media ($tablet-width) {

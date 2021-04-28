@@ -12,6 +12,8 @@
 
   @media ($desktop-width) {
     max-width: 1150px;
+    margin-top: 59px;
+    margin-bottom: 104px;
   }
 }
 
@@ -36,8 +38,8 @@
   padding: 0;
   margin: 0;
   padding-left: 91px;
-  padding-top: 24px;
-  padding-bottom: 27px;
+  padding-top: 21px;
+  padding-bottom: 25px;
 
   @media ($mobile-width) {
     order: -1;
@@ -59,7 +61,6 @@
 }
 
 .production__image-wrapper {
-  margin: 0 auto;
   margin-bottom: 30px;
 
   @media ($tablet-width) {
@@ -73,6 +74,9 @@
 }
 
 .production__image {
+  width: 100%;
+  height: auto;
+
   @media ($tablet-width) {
     width: 668px;
     height: 455px;
@@ -91,12 +95,14 @@
   color: $color-text-description;
   margin: 0;
   margin-bottom: 40px;
+  padding-top: 3px;
   padding-left: 32px;
   padding-right: 32px;
 
   @media ($tablet-width) {
     font-size: 15px;
     line-height: 30px;
+    padding-top: 0;
     padding-left: 40px;
     padding-right: 40px;
   }

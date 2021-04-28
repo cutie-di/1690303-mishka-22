@@ -5,6 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Мишка</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/icons/180.png">
+  <link rel="manifest" href="manifest.webmanifest">
 
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -17,7 +21,11 @@
       <div class="main-nav__wrapper">
 
         <a class="main-nav__logo" href="index.html">
-          <img src="img/logo/header_logo_mobile.svg" width="86" height="35" alt="Логотип «Мишка»">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/logo/header_logo_desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo/header_logo_tablet.svg">
+            <img src="img/logo/header_logo_mobile.svg" width="86" height="35" alt="Логотип «Мишка»">
+          </picture>
         </a>
 
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
