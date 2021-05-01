@@ -7,7 +7,7 @@
   }
 
   @media ($desktop-width) {
-    margin-bottom: 103px;
+    margin-bottom: 101px;
   }
 }
 
@@ -144,6 +144,16 @@
 
   @media ($desktop-width) {
     padding-bottom: 7px;
+  }
+
+  &:hover,
+  &:focus {
+    color: $color-focus-green;
+    border-bottom: 1px solid $color-focus-green;
+  }
+
+  &:active {
+    border-bottom: 1px solid $color-basic-mail-green-opacity-01;
   }
 }
 

@@ -81,6 +81,7 @@
 
 .main-header__list {
   margin: 0 auto;
+  padding: 0;
 
   @media ($tablet-width) {
     display: grid;
@@ -94,8 +95,9 @@
   }
 }
 
-.main-header__item {
+.main-header__link {
   display: block;
+  position: relative;
   font-family: inherit;
   font-weight: 700;
   font-size: 19px;
@@ -118,8 +120,75 @@
     line-height: 30px;
     padding-left: 36px;
   }
-}
 
-.main-header__item--kidtoys {
-  background-color: $color-kidtoys-background;
+  &--interior {
+    &::after {
+      position: absolute;
+      content: "";
+      width: 41px;
+      height: 62px;
+      right: 35px;
+      top: 23px;
+      opacity: 0.5;
+      background-image: url("../img/main-header_interior.svg");
+      background-repeat: no-repeat;
+
+      @media ($tablet-width) {
+        top: 29px;
+      }
+    }
+
+    &:hover,
+    &:focus {
+      margin-top: -5px;
+      padding-bottom: 5px;
+
+      &::after {
+        opacity: 0.7;
+      }
+    }
+
+    &:active {
+      &::after {
+        opacity: 0.3;
+      }
+    }
+  }
+
+  &--kidtoys {
+    background-color: $color-kidtoys-background;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 60px;
+      height: 60px;
+      right: 27px;
+      top: 21px;
+      opacity: 0.5;
+      background-image: url("../img/main-header_toy.svg");
+      background-repeat: no-repeat;
+
+      @media ($tablet-width) {
+        right: 34px;
+        top: 31px;
+      }
+    }
+
+    &:hover,
+    &:focus {
+      margin-top: -5px;
+      padding-bottom: 5px;
+
+      &::after {
+        opacity: 0.7;
+      }
+    }
+
+    &:active {
+      &::after {
+        opacity: 0.3;
+      }
+    }
+  }
 }

@@ -82,20 +82,30 @@
   }
 }
 
-.modal-order__control-checkbox {
+//.modal-order__control-checkbox {}
+
+.modal-order__control-input + .modal-order__control-label {
+  position: relative;
   padding: 14px 34px;
   border: 2px solid $color-basic-grey-opacity-01;
-
-  &--checked {
-    border: 2px solid $color-accent-green;
-  }
 
   @media ($tablet-width) {
     padding: 14px 46px;
   }
+
+  &:hover,
+  &:focus {
+    border: 2px solid $color-basic-grey-opacity-03;
+  }
+
+  &:active {
+    border: 2px solid $color-form-decoration-green;
+  }
 }
 
-//.modal-order__control-input {}
+.modal-order__control-input:checked + .modal-order__control-label {
+  border: 2px solid $color-accent-green;
+}
 
 .modal-order__control-label {
   font-family: inherit;
@@ -130,17 +140,6 @@
   right: 0;
   left: 0;
   margin: auto;
-}
-
-.overlay {
-  display: none;
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 2;
-  background-color: $color-basic-white-opacity-09;
 }
 
 .modal-show {
