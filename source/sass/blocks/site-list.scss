@@ -70,4 +70,13 @@
   @media ($desktop-width) {
     font-size: 17px;
   }
+
+  &:hover,
+  &:focus {
+    color: $color-basic-black-opacity-06;
+  }
+
+  &:active {
+    color: $color-basic-black-opacity-03;
+  }
 }

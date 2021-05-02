@@ -49,6 +49,15 @@
     display: block;
     padding-right: 62px;
   }
+
+  &:hover,
+  &:focus {
+    color: $color-basic-black-opacity-06;
+  }
+
+  &:active {
+    color: $color-basic-black-opacity-03;
+  }
 }
 
 .nav-delivery__post {
@@ -59,6 +68,8 @@
   line-height: 24px;
   color: $color-text-description;
   text-align: right;
+  cursor: pointer;
+  text-decoration: none;
   margin: 0;
   padding: 0;
 

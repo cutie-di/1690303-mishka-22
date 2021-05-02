@@ -219,11 +219,21 @@
   position: relative;
   border: 1px solid $color-main-nav-decoration;
   background-color: transparent;
+  cursor: pointer;
   padding: 25px 64px;
 
   @media ($tablet-width) {
     border: none;
     padding: 25px 43px;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 

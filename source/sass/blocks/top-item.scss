@@ -34,7 +34,6 @@
   @media ($desktop-width) {
     padding-bottom: 91px;
 
-
     &::after {
       position: absolute;
       content: "";
@@ -285,5 +284,15 @@
 
   @media ($tablet-width) {
     min-width: 292px;
+  }
+
+  &:hover,
+  &:focus {
+    color: $color-basic-white;
+    background-color: $color-text-description;
+  }
+
+  &:active {
+    color: $color-basic-white-opacity-03;
   }
 }
