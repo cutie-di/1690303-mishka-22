@@ -138,14 +138,17 @@
       }
     }
 
-    &:hover,
-    &:focus {
+    &:hover {
       margin-top: -5px;
       padding-bottom: 5px;
 
       &::after {
         opacity: 0.7;
       }
+    }
+
+    &:focus {
+      outline: 1px solid $color-basic-black;
     }
 
     &:active {
@@ -175,14 +178,17 @@
       }
     }
 
-    &:hover,
-    &:focus {
+    &:hover {
       margin-top: -5px;
       padding-bottom: 5px;
 
       &::after {
         opacity: 0.7;
       }
+    }
+
+    &:focus {
+      outline: 1px solid $color-basic-black;
     }
 
     &:active {

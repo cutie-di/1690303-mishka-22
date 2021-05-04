@@ -6,9 +6,16 @@
   @media ($desktop-width) {
     flex-direction: column;
   }
+
+  &:hover,
+  &:focus,
+  &:active {
+    box-shadow: 0 6px 10px $color-basic-grey-opacity-01;
+  }
 }
 
 .card__image {
+  display: block;
   width: 100%;
   height: auto;
 
@@ -29,10 +36,6 @@
   padding: 0 28px;
   border: 1px solid $color-border-decoration-grey;
 
-  @media ($mobile-width) {
-    margin-top: -3px;
-  }
-
   @media ($tablet-width) {
     display: flex;
     flex-direction: column;
@@ -46,7 +49,6 @@
     padding: 0;
     padding-left: 27px;
     padding-right: 32px;
-    margin-top: -5px;
   }
 }
 
@@ -61,7 +63,7 @@
   line-height: 24px;
   color: $color-basic-black;
   margin: 0;
-  padding-top: 27px;
+  padding-top: 28px;
   padding-bottom: 5px;
 
   &--big {
@@ -80,7 +82,16 @@
 
   @media ($desktop-width) {
     padding-right: 15px;
-    padding-top: 32px;
+    padding-top: 27px;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -105,6 +116,8 @@
 
 .card__price-wrapper {
   position: relative;
+  display: flex;
+  justify-content: space-between;
 
   &::before {
     position: absolute;
@@ -139,9 +152,37 @@
   }
 
   @media ($desktop-width) {
-    padding-top: 19px;
-    padding-bottom: 23px;
+    padding-top: 21px;
+    padding-bottom: 26px;
   }
 }
 
-//.card__button {}
+.card__button {
+  padding: 10px;
+
+  &:hover .card__button-icon,
+  &:focus .card__button-icon {
+    opacity: 1;
+    fill: $color-accent-green;
+  }
+
+  &:active .card__button-icon {
+    opacity: 0.3;
+  }
+}
+
+.card__button-icon {
+  position: absolute;
+  top: 24px;
+  right: -2px;
+  opacity: 0.2;
+
+  @media ($tablet-width) {
+    right: 3px;
+  }
+
+  @media ($desktop-width) {
+    top: 26px;
+    right: 0;
+  }
+}

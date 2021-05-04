@@ -2,7 +2,7 @@
   @media ($mobile-width) {
     max-width: 500px;
     margin: 0 auto;
-    margin-top: 31px;
+    margin-top: 30px;
     margin-bottom: 30px;
   }
 
@@ -37,7 +37,7 @@
 .product__item {
   &:not(:last-child) {
     @media ($mobile-width) {
-      margin-bottom: 31px;
+      margin-bottom: 30px;
     }
 
     @media ($tablet-width) {

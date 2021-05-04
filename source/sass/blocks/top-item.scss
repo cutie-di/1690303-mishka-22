@@ -285,14 +285,4 @@
   @media ($tablet-width) {
     min-width: 292px;
   }
-
-  &:hover,
-  &:focus {
-    color: $color-basic-white;
-    background-color: $color-text-description;
-  }
-
-  &:active {
-    color: $color-basic-white-opacity-03;
-  }
 }
