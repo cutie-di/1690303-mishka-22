@@ -9,4 +9,14 @@
   text-align: center;
   color: $color-text-description;
   border: 2px solid $color-text-description;
+
+  &:hover,
+  &:focus {
+    color: $color-basic-white;
+    background-color: $color-text-description;
+  }
+
+  &:active {
+    color: $color-basic-white-opacity-03;
+  }
 }
