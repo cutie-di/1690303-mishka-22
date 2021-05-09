@@ -10,7 +10,7 @@
   <link rel="apple-touch-icon" href="img/icons/180.png">
   <link rel="manifest" href="manifest.webmanifest">
 
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body class="page__body">
@@ -82,9 +82,9 @@
             </li>
           </ul>
 
-          <a class="nav-delivery__post" href="#">
+          <p class="nav-delivery__post">
             Бесплатная доставка по России
-          </a>
+          </p>
         </div>
 
       </div>
@@ -134,6 +134,12 @@
 
         <div class="top-item__image-wrapper">
           <picture>
+            <source type="image/webp" media="(min-width: 1150px)"
+              srcset="img/top-item-desktop.webp 1x, img/top-item-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/top-item-tablet.webp 1x, img/top-item-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/top-item-mobile.webp 1x, img/top-item-mobile@2x.webp 2x">
+
             <source media="(min-width: 1150px)" srcset="img/top-item-desktop.jpg 1x, img/top-item-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/top-item-tablet.jpg 1x, img/top-item-tablet@2x.jpg 2x">
             <img class="top-item__image" src="img/top-item-mobile.jpg" srcset="img/top-item-mobile@2x.jpg 2x"
@@ -224,7 +230,7 @@
               class="visually-hidden">Вперед</span></button>
         </p>
 
-        <div class="review__write-wrapper">
+        <div class="reviews__write-wrapper">
           <a class="reviews__write button" href="#">Написать</a>
         </div>
       </div>
@@ -255,7 +261,7 @@
 
         <div class="contacts__map">
           <h2 class="visually-hidden">Как до нас добраться</h2>
-          <iframe class="contacts__map-iframe"
+          <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002815!2d30.32085871569252!3d59.93871916905466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x62740c0ffcd8a91f!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20101%2C%20Sankt-Peterburg%2C%20Russia%2C%20191186!5e0!3m2!1sen!2suk!4v1616759042472!5m2!1sen!2suk"
             style="border: 0;" allowfullscreen title="г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101"
             loading="lazy">
@@ -322,39 +328,38 @@
     </div>
   </footer>
 
-  <section class="modal modal-order container">
+  <section class="modal">
     <h2 class="visually-hidden">Всплывающее окно заказа товара</h2>
-    <div class="modal-order__wrapper">
-      <h3 class="modal-order__title">Добавить <br>в корзину</h3>
-      <form class="modal-order__form" method="get" action="https://echo.htmlacademy.ru">
-        <fieldset class="modal-order__fieldset">
-          <legend class="modal-order__legend">Выберите размер:</legend>
-          <ul class="modal-order__control">
-            <li class="modal-order__control-checkbox">
-              <input class="modal-order__control-input visually-hidden" checked type="checkbox" name="s-value"
+    <div class="modal__order container">
+      <h3 class="modal__order-title">Добавить <br>в корзину</h3>
+      <form class="modal__order-form" method="get" action="https://echo.htmlacademy.ru">
+        <fieldset class="modal__order-fieldset">
+          <legend class="modal__order-legend">Выберите размер:</legend>
+          <ul class="modal__order-control">
+            <li class="modal__order-control-checkbox">
+              <input class="modal__order-control-input visually-hidden" checked type="checkbox" name="s-value"
                 id="s-size">
-              <label class="modal-order__control-label" for="s-size">S</label>
+              <label class="modal__order-control-label" for="s-size">S</label>
             </li>
 
-            <li class="modal-order__control-checkbox">
-              <input class="modal-order__control-input visually-hidden" type="checkbox" name="m-value" id="m-size">
-              <label class="modal-order__control-label" for="m-size">M</label>
+            <li class="modal__order-control-checkbox">
+              <input class="modal__order-control-input visually-hidden" type="checkbox" name="m-value" id="m-size">
+              <label class="modal__order-control-label" for="m-size">M</label>
             </li>
 
-            <li class="modal-order__control-checkbox">
-              <input class="modal-order__control-input visually-hidden" type="checkbox" name="l-value" id="l-size">
-              <label class="modal-order__control-label" for="l-size">L</label>
+            <li class="modal__order-control-checkbox">
+              <input class="modal__order-control-input visually-hidden" type="checkbox" name="l-value" id="l-size">
+              <label class="modal__order-control-label" for="l-size">L</label>
             </li>
           </ul>
         </fieldset>
-
-        <button class="modal-order__add" type="submit">Добавить</button>
-
+        <button class="modal__order-add" type="submit">Добавить</button>
       </form>
     </div>
+    <div class="overlay"></div>
   </section>
 
-  <script src="js/script.js"></script>
+  <script src="js/script.min.js"></script>
 
 </body>
 

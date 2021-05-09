@@ -101,24 +101,32 @@
   }
 }
 
-.poduction__image-button {
+.production__image-button {
+  position: absolute;
   width: 101px;
   height: 77px;
-}
-
-.poduction__image-button-icon {
-  position: absolute;
-  left: 0;
-  right: 0;
   top: 0;
   bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 24px 50px;
   margin: auto;
-  z-index: 5;
-  cursor: pointer;
 
   @media ($desktop-width) {
-    top: 189px;
-    margin: 0 auto;
+    margin: 189px auto;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 101px;
+    height: 77px;
+    background-image: url("../img/catalog_play.svg");
+    background-repeat: no-repeat;
+    z-index: 5;
+    cursor: pointer;
   }
 
   &:hover,
