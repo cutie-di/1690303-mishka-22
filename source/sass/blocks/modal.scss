@@ -1,11 +1,12 @@
-.modal-order {
+.modal__order {
   display: none;
+  position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  left: 50%;
+  transform: translate(-50%, -50%);
   box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
   background-color: $color-basic-white;
   z-index: 5;
-  bottom: auto;
   width: 320px;
 
   @media ($tablet-width) {
@@ -14,9 +15,7 @@
   }
 }
 
-//.modal-order__wrapper {}
-
-.modal-order__title {
+.modal__order-title {
   font-family: inherit;
   font-weight: 700;
   font-size: 25px;
@@ -27,7 +26,7 @@
   padding: 0;
   margin: 0;
   padding-top: 28px;
-  margin-bottom: 14px;
+  padding-bottom: 14px;
 
   @media ($tablet-width) {
     font-size: 30px;
@@ -40,17 +39,17 @@
   }
 }
 
-.modal-order__form {
+.modal__order-form {
   padding-bottom: 43px;
 }
 
-.modal-order__fieldset {
+.modal__order-fieldset {
   padding: 0;
   margin: 0;
   border: none;
 }
 
-.modal-order__legend {
+.modal__order-legend {
   font-family: inherit;
   font-weight: inherit;
   font-size: 15px;
@@ -58,7 +57,7 @@
   color: $color-text-description;
   text-align: center;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   margin-bottom: 23px;
 
   @media ($tablet-width) {
@@ -68,7 +67,7 @@
   }
 }
 
-.modal-order__control {
+.modal__order-control {
   display: flex;
   justify-content: space-between;
   list-style: none;
@@ -82,9 +81,7 @@
   }
 }
 
-//.modal-order__control-checkbox {}
-
-.modal-order__control-input + .modal-order__control-label {
+.modal__order-control-input + .modal__order-control-label {
   position: relative;
   padding: 14px 34px;
   border: 2px solid $color-basic-grey-opacity-01;
@@ -103,11 +100,11 @@
   }
 }
 
-.modal-order__control-input:checked + .modal-order__control-label {
+.modal__order-control-input:checked + .modal__order-control-label {
   border: 2px solid $color-accent-green;
 }
 
-.modal-order__control-label {
+.modal__order-control-label {
   font-family: inherit;
   font-weight: 700;
   font-size: 17px;
@@ -116,7 +113,7 @@
   text-align: center;
 }
 
-.modal-order__add {
+.modal__order-add {
   display: block;
   font-family: inherit;
   font-weight: 700;
@@ -136,12 +133,18 @@
 }
 
 .modal {
+  display: none;
   position: fixed;
-  right: 0;
+  top: 0;
   left: 0;
-  margin: auto;
+  width: 100%;
+  height: 100%;
 }
 
-.modal-show {
+.modal--show {
+  display: block;
+}
+
+.modal__order--show {
   display: block;
 }

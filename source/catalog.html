@@ -10,7 +10,7 @@
   <link rel="apple-touch-icon" href="img/icons/180.png">
   <link rel="manifest" href="manifest.webmanifest">
 
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body class="page__body">
@@ -82,9 +82,9 @@
             </li>
           </ul>
 
-          <a class="nav-delivery__post" href="#">
+          <p class="nav-delivery__post">
             Бесплатная доставка по России
-          </a>
+          </p>
         </div>
 
       </div>
@@ -110,6 +110,12 @@
 
             <article class="card">
               <picture>
+                <source type="image/webp" media="(min-width: 1150px)"
+                  srcset="img/photo-1-desktop.webp 1x, img/photo-1-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/photo-1-tablet.webp 1x, img/photo-1-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-1-mobile.webp 1x, img/photo-1-mobile@2x.webp 2x">
+
                 <source media="(min-width: 1150px)" srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
                 <img class="card__image" src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" width="260"
@@ -136,6 +142,12 @@
           <li class="product__item">
             <article class="card">
               <picture>
+                <source type="image/webp" media="(min-width: 1150px)"
+                  srcset="img/photo-2-desktop.webp 1x, img/photo-2-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/photo-2-tablet.webp 1x, img/photo-2-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-2-mobile.webp 1x, img/photo-2-mobile@2x.webp 2x">
+
                 <source media="(min-width: 1150px)" srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
                 <img class="card__image" src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" width="260"
@@ -163,6 +175,12 @@
           <li class="product__item">
             <article class="card">
               <picture>
+                <source type="image/webp" media="(min-width: 1150px)"
+                  srcset="img/photo-3-desktop.webp 1x, img/photo-3-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/photo-3-tablet.webp 1x, img/photo-3-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-3-mobile.webp 1x, img/photo-3-mobile@2x.webp 2x">
+
                 <source media="(min-width: 1150px)" srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
                 <img class="card__image" src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" width="260"
@@ -195,15 +213,19 @@
       <div class="production__wrapper">
         <div class="production__image-wrapper">
           <picture>
+            <source type="image/webp" media="(min-width: 1150px)"
+              srcset="img/production-desktop.webp 1x, img/production-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/production-tablet.webp 1x, img/production-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/production-mobile.webp 1x, img/production-mobile@2x.webp 2x">
+
             <source media="(min-width: 1150px)"
               srcset="img/production-desktop.jpg 1x, img/production-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/production-tablet.jpg 1x, img/production-tablet@2x.jpg 2x">
             <img class="production__image" src="img/production-mobile.jpg" srcset="img/production-mobile@2x.jpg 2x"
               width="260" height="150" alt="Изображение зелено-серой корзинки из трикотажной пряжи">
           </picture>
-          <a class="poduction__image-button">
-            <img class="poduction__image-button-icon" src="img/catalog_play.svg" width="101" height="77"
-              alt="Кнопка воспроизведения видео">
+          <a class="production__image-button">
           </a>
         </div>
 
@@ -269,7 +291,7 @@
     </div>
   </footer>
 
-  <script src="js/script.js"></script>
+  <script src="js/script.min.js"></script>
 
 </body>
 
