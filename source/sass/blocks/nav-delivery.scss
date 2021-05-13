@@ -19,6 +19,7 @@
 
   @media ($tablet-width) {
     display: flex;
+    flex-wrap: wrap;
   }
 
   @media ($desktop-width) {
