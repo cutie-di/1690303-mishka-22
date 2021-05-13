@@ -371,6 +371,10 @@
   }
 }
 
+.form-content__checkbox-input:focus + .form-content__checkbox-label::before {
+  border: 2px solid $color-form-decoration-green;
+}
+
 .form-content__checkbox-label {
   font-family: inherit;
   font-weight: 700;
