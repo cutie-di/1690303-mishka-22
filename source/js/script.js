@@ -14,14 +14,14 @@ navToggle.addEventListener('click', function () {
   } else {
     navMain.classList.add('main-nav--closed');
     navMain.classList.remove('main-nav--opened');
-  }
+    }
 });
 
 for (let i = 0; i < orderButton.length; i++) {
   orderButton[i].addEventListener('click', function (evt) {
-   evt.preventDefault();
-   overlay.classList.add('overlay--show');
-   modal.classList.add('modal--show');
+    evt.preventDefault();
+    overlay.classList.add('overlay--show');
+    modal.classList.add('modal--show');
     modalOrder.classList.add('modal__order--show');
   })
 };
