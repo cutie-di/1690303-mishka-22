@@ -95,6 +95,7 @@
   }
 
   @media ($desktop-width) {
+    margin-top: 85px;
     margin-bottom: 37px;
   }
 }
@@ -132,8 +133,6 @@
 .reviews__item {
   margin: 0;
 }
-
-//.reviews__author-info {}
 
 .reviews__text {
   font-family: inherit;
@@ -210,7 +209,7 @@
   }
 
   @media ($desktop-width) {
-    bottom: 62px;
+    bottom: 64px;
   }
 }
 

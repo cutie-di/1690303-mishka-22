@@ -7,7 +7,7 @@
   }
 
   @media ($desktop-width) {
-    margin-bottom: 101px;
+    margin-bottom: 104px;
   }
 }
 
@@ -16,7 +16,7 @@
 
   @media ($desktop-width) {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     width: 1150px;
     margin: 0 auto;
   }
@@ -37,13 +37,14 @@
 
   @media ($desktop-width) {
     width: 50%;
-    flex-grow: 1;
     padding: 0;
     padding-left: 225px;
+    margin: 0;
   }
 }
 
 .contacts__title {
+  position: relative;
   font-family: inherit;
   font-weight: 700;
   font-size: 18px;
@@ -58,6 +59,17 @@
     line-height: 50px;
     margin-top: 69px;
     margin-bottom: 48px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 47px;
+      height: 81px;
+      right: 3px;
+      bottom: -9px;
+      background-image: url("../img/flag.svg");
+      background-repeat: no-repeat;
+    }
   }
 
   @media ($desktop-width) {
@@ -65,6 +77,11 @@
     line-height: 57px;
     margin-top: 111px;
     margin-bottom: 33px;
+
+    &::after {
+      left: -112px;
+      bottom: -6px;
+    }
   }
 }
 
@@ -73,6 +90,10 @@
 
   @media ($tablet-width) {
     margin-bottom: 45px;
+  }
+
+  @media ($desktop-width) {
+    margin-bottom: 82px;
   }
 }
 
@@ -116,7 +137,6 @@
 }
 
 .contacts__value {
-
   font-family: inherit;
   font-weight: 400;
   font-size: 14px;
@@ -206,8 +226,11 @@
   }
 
   @media ($desktop-width) {
-    width: 50%;
-    flex-grow: 1;
+    position: absolute;
+    height: 457px;
+    width: 527px;
+    top: 0;
+    right: 50px;
     background-image: url("../img/map-desktop.png");
     background-repeat: no-repeat;
     background-size: 527px 457px;
@@ -220,7 +243,7 @@
 
     &::after {
       left: 0;
-      right: 33px;
+      right: -19px;
     }
   }
 }
@@ -254,9 +277,7 @@
   }
 
   @media ($desktop-width) {
-    position: absolute;
-    left: 0;
-    bottom: 4px;
+    margin: 0;
     padding-left: 225px;
   }
 }
@@ -269,5 +290,9 @@
   @media ($tablet-width) {
     font-size: 17px;
     width: 230px;
+  }
+
+  @media ($desktop-width) {
+    margin: 0;
   }
 }

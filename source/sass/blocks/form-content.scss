@@ -6,10 +6,6 @@
   }
 }
 
-//.form-content__form {}
-
-//.form-content__wrapper {}
-
 .form-content__wrapper--accent {
   @media ($tablet-width) {
     background-color: $color-page-background-grey;
@@ -511,6 +507,7 @@
 .form-content__text-input--tel {
   padding: 0;
   height: 56px;
+  padding-right: 60px;
 
   @media ($tablet-width) {
     background-color: $color-page-background-grey;
@@ -561,6 +558,7 @@
 .form-content__text-input--email {
   padding: 0;
   height: 56px;
+  padding-right: 60px;
 
   @media ($tablet-width) {
     background-color: $color-page-background-grey;
