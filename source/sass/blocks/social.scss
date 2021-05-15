@@ -1,22 +1,22 @@
-//.social {}
-
 .social__list {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
   list-style: none;
   height: 29px;
-  width: 142px;
+  width: 182px;
   align-items: center;
   margin: 0 auto;
   padding: 0;
-  padding-top: 6px;
 
   @media ($tablet-width) {
-    padding-top: 10px;
+    padding-top: 5px;
   }
 }
 
-//.social__item {}
+.social__item {
+  margin-right: 20px;
+  margin-left: 20px;
+}
 
 .social__link {
   &:hover .social__logo-icon,

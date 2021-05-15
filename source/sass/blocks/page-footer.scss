@@ -12,7 +12,7 @@
     justify-content: space-between;
     max-width: 900px;
     padding-top: 49px;
-    padding-bottom: 57px;
+    padding-bottom: 53px;
   }
 
   @media ($desktop-width) {
@@ -53,8 +53,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 20px;
-  padding-bottom: 21px;
+  padding-top: 19px;
+  padding-bottom: 19px;
 
   @media ($tablet-width) {
     padding: 0;
@@ -70,6 +70,7 @@
   color: $color-basic-black;
   margin: 0;
   padding-right: 28px;
+  padding-bottom: 3px;
 }
 
 .page-footer__copyright-link {

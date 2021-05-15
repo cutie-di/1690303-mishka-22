@@ -47,24 +47,20 @@
 }
 
 .user-list__search-button {
-  position: absolute;
-  border: 0;
-  background-color: transparent;
-  width: 18px;
-  height: 18px;
+  display: block;
   cursor: pointer;
-  padding: 0;
 
   @media ($mobile-width) {
-    bottom: 2px;
-    left: -44px;
+    position: absolute;
+    bottom: 20px;
+    left: -26px;
   }
 
   @media ($tablet-width) {
     border-left: 1px solid $color-basic-black-opacity-01;
     border-right: 1px solid $color-basic-black-opacity-01;
-    left: 1px;
-    top: 0;
+    width: 85px;
+    height: 89px;
     padding: 44px 41px;
   }
 }
@@ -78,10 +74,9 @@
   top: 0;
   right: 0;
 
-
   @media ($tablet-width) {
     top: 36px;
-    right: 31px;
+    right: 32px;
   }
 }
 
