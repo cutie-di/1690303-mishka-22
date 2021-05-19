@@ -86,14 +86,14 @@
 }
 
 .contacts__table {
-  margin-bottom: 62px;
+  margin-bottom: 30px;
 
   @media ($tablet-width) {
-    margin-bottom: 45px;
+    margin-bottom: 16px;
   }
 
   @media ($desktop-width) {
-    margin-bottom: 82px;
+    margin-bottom: 51px;
   }
 }
 
@@ -109,15 +109,12 @@
 
 .contacts__email {
   display: flex;
-  margin-bottom: 30px;
-
-  @media ($desktop-width) {
-    margin-bottom: 30px;
-  }
+  padding-bottom: 30px;
 }
 
 .contacts__adress {
   display: flex;
+  padding-bottom: 30px;
 }
 
 .contacts__feature {
@@ -208,7 +205,6 @@
   }
 
   @media ($tablet-width) {
-    margin-top: 34px;
     margin-bottom: 0;
     background-image: url("../img/map-tablet.png");
     background-repeat: no-repeat;

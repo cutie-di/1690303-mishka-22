@@ -7,12 +7,12 @@
     flex-direction: column;
   }
 
-  &:hover,
-  &:focus {
+  &:hover .card__info-wrapper,
+  &:focus .card__info-wrapper {
     box-shadow: 0 6px 10px $color-basic-grey-opacity-01;
   }
 
-  &:active {
+  &:active .card__info-wrapper {
     box-shadow: 0 3px 5px $color-basic-grey-opacity-01;
   }
 }
