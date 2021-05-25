@@ -7,7 +7,7 @@ on:
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     steps:
       - name: Check Out
@@ -33,6 +33,6 @@ jobs:
         uses: cutie-di/1690303-mishka-22
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          FOLDER: ./build
+          FOLDER: build
           BRANCH: gh-pages
           SINGLE_COMMIT: false
