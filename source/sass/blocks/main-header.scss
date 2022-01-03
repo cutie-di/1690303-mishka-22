@@ -120,81 +120,81 @@
     line-height: 30px;
     padding-left: 36px;
   }
+}
 
-  &--interior {
-    &::after {
-      position: absolute;
-      content: "";
-      width: 41px;
-      height: 62px;
-      right: 35px;
-      top: 23px;
-      opacity: 0.5;
-      background-image: url("../img/main-header_interior.svg");
-      background-repeat: no-repeat;
+.main-header__link--interior {
+  &::after {
+    position: absolute;
+    content: "";
+    width: 41px;
+    height: 62px;
+    right: 35px;
+    top: 23px;
+    opacity: 0.5;
+    background-image: url("../img/main-header_interior.svg");
+    background-repeat: no-repeat;
 
-      @media ($tablet-width) {
-        top: 29px;
-      }
-    }
-
-    &:hover {
-      margin-top: -5px;
-      padding-bottom: 35px;
-
-      &::after {
-        opacity: 0.7;
-      }
-    }
-
-    &:focus {
-      outline: 1px solid $color-basic-black;
-    }
-
-    &:active {
-      &::after {
-        opacity: 0.3;
-      }
+    @media ($tablet-width) {
+      top: 29px;
     }
   }
 
-  &--kidtoys {
-    background-color: $color-kidtoys-background;
+  &:hover {
+    margin-top: -5px;
+    padding-bottom: 35px;
 
     &::after {
-      position: absolute;
-      content: "";
-      width: 60px;
-      height: 60px;
-      right: 27px;
-      top: 21px;
-      opacity: 0.5;
-      background-image: url("../img/main-header_toy.svg");
-      background-repeat: no-repeat;
-
-      @media ($tablet-width) {
-        right: 34px;
-        top: 31px;
-      }
+      opacity: 0.7;
     }
+  }
 
-    &:hover {
-      margin-top: -5px;
-      padding-bottom: 35px;
+  &:focus {
+    outline: 1px solid $color-basic-black;
+  }
 
-      &::after {
-        opacity: 0.7;
-      }
+  &:active {
+    &::after {
+      opacity: 0.3;
     }
+  }
+}
 
-    &:focus {
-      outline: 1px solid $color-basic-black;
+.main-header__link--kidtoys {
+  background-color: $color-kidtoys-background;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 60px;
+    right: 27px;
+    top: 21px;
+    opacity: 0.5;
+    background-image: url("../img/main-header_toy.svg");
+    background-repeat: no-repeat;
+
+    @media ($tablet-width) {
+      right: 34px;
+      top: 31px;
     }
+  }
 
-    &:active {
-      &::after {
-        opacity: 0.3;
-      }
+  &:hover {
+    margin-top: -5px;
+    padding-bottom: 35px;
+
+    &::after {
+      opacity: 0.7;
+    }
+  }
+
+  &:focus {
+    outline: 1px solid $color-basic-black;
+  }
+
+  &:active {
+    &::after {
+      opacity: 0.3;
     }
   }
 }
