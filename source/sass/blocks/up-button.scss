@@ -1,0 +1,28 @@
+.up-button {
+  position: fixed;
+  z-index: 1;
+  padding: 0;
+  bottom: 10%;
+  right: 5%;
+  width: 64px;
+  height: 64px;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+  border: 5px solid #56c3b2;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  display: none;
+  cursor: pointer;
+
+  &:hover {
+    color: #473c8d;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-color: #444444;
+  }
+}
+
+.shown {
+  display: block;
+}

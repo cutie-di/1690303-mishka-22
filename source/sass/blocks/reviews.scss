@@ -271,3 +271,11 @@
     }
   }
 }
+
+.slider__item {
+  display: none;
+}
+
+.slider__item-active {
+  display: block;
+}

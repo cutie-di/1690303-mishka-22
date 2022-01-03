@@ -3,7 +3,7 @@
 
   @media ($tablet-width) {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     width: 52%;
     background-color: $color-basic-white;
     padding: 0;
